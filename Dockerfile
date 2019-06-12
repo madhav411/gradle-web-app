@@ -1,3 +1,3 @@
-FROM jboss/wildfly
+FROM tomcat:9.0.20
 # Dummy text to test 
-COPY build/libs/gradle-web-app*.war /opt/jboss/wildfly/standalone/deployments/gradle-web-app.war
+COPY build/libs/*.war /opt/jboss/wildfly/standalone/deployments/my.war
