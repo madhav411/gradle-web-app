@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:8.5.42
 # Dummy text to test 
 COPY context.xml /usr/local/tomcat/webapps/manager/META-INF
 COPY tomcat-users.xml /usr/local/tomcat/conf
